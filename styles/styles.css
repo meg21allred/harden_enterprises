@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(146, 178, 197);
+}
+
+#logo {
+    height: 100px;
+}
+
+#logo_name {
+    display: inline-block;
+}
