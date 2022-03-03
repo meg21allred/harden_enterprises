@@ -1,11 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: rgb(146, 178, 197);
+    background-color: steelblue;
+}
+/* general */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
 }
 
-#logo {
-    height: 100px;
+
+/* primary header */
+
+.logo {
+    margin: 2rem;
+    cursor: pointer;
+    height: 75px;
 }
 
-#logo_name {
-    display: inline-block;
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
 }
+
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    /* could put back in just phone size if preferred */
+    background: hsl(0 0% 100% /0.1);
+    backdrop-filter: blur(1rem);
+}
+
+.primary-navigation a {
+    text-decoration: none;
+
+}
+
+.primary-navigation a > span {
+    font-weight: 700;
+    margin-inline-end: 0.75em;
+}
+
+@media (max-width: 35em) {
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+    
+    }
+}
+
+/* body */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #ad3618;
+}
+
