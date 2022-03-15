@@ -9,39 +9,60 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    <img class="white_logo" src="images/white_logo.svg" alt="white harden logo">
-    <header class="primary-header flex">
-        <div>
-            <img class="logo" src="images/logo.svg" alt="harden logo">
+    <div class="top">
+        <img class="white-logo" src="images/white_logo.svg" alt="white harden logo">
+        <div class="header">
+            <div>
+                <a href="index.html"><img class="logo" src="images/logo.svg" alt="harden logo"></a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+    
+            <nav class="nav-header"> 
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="active">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-        </button>
+    
+        <div class="hero">
+            <h1>Harden Enterprises</h1>
+            <h2>Technology Consultants</h2>
+            <button class="btn cta" onclick="document.location='about.html'">LEARN MORE</button>
+        </div>
+    </div>
+   
 
-        <nav> 
-            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                <li class="active">
-                    <a href="services.html">Services</a>
-                </li>
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contacts.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-<div class="hero">
-    <h1>Harden Enterprises</h1>
-    <h2>Technology Consultants</h2>
-    <button class="btn cta" onclick="document.location='about.html'">LEARN MORE</button>
+<div class="team">
+    <h1>Meet the Team...</h1>
 </div>
-
+<div class="team">
+    <h1>Meet the Team...</h1>
+</div>
+<div class="team">
+    <h1>Meet the Team...</h1>
+</div>
+<div class="team">
+    <h1>Meet the Team...</h1>
+</div>
+<div class="team">
+    <h1>Meet the Team...</h1>
+</div>
+<div class="team">
+    <h1>Meet the Team...</h1>
+</div>
 </body>
 </html>
