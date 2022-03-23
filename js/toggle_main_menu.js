@@ -1,6 +1,7 @@
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
+//open/close the hamburger menu and change icon to toggle between hamburg/x
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible');
     
@@ -12,3 +13,4 @@ navToggle.addEventListener('click', () => {
         navToggle.setAttribute('aria-expanded', false);
     }
 });
+

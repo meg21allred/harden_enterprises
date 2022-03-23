@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Harden Enterprises</title>
-    <script src="js/app.js" defer></script>
+    <script src="js/toggle_main_menu.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 </head>
 <body>
     <div class="top">
         <img class="white-logo" src="images/white_logo.svg" alt="white harden logo">
         <div class="header">
             <div>
-                <a href="index.html"><img class="logo" src="images/logo.svg" alt="harden logo"></a>
+                <a href="index.html"><img class="logo" src="images/header/logo.svg" alt="harden logo"></a>
             </div>
             
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -45,24 +46,37 @@
         </div>
     </div>
    
+<div class="services_carousel">
+    <button class="carousel_button carousel_button--left is-hidden">
+        <img src="images/carousel/left_arrow.svg" alt="left arrow">
+    </button>
+    <div class="carousel_track-container">
+        <ul class="carousel_track">
+            <li class="carousel_slider current-slide">
+                <img class="carousel_image" src="images/carousel/gray_board-min.jpg" alt="gray board">
+            </li>
+            <li class="carousel_slider">
+                <img class="carousel_image" src="images/carousel/rainbow_chip-min.jpg" alt="rainbow chip">
+            </li>
+            <li class="carousel_slider">
+                <img class="carousel_image" src="images/carousel/servers-min.jpg" alt="servers">
+            </li>
+            <li class="carousel_slider">
+                <img class="carousel_image" src="images/carousel/wires-min.jpg" alt="wires">
+            </li>
+        </ul>
+    </div>
+    <button class="carousel_button carousel_button--right">
+        <img src="images/carousel/right_arrow.svg" alt="right arrow">
+    </button>
 
-<div class="team">
-    <h1>Meet the Team...</h1>
+    <div class="carousel_nav">
+        <button class="carousel_indicator current-slide"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+    </div>
 </div>
-<div class="team">
-    <h1>Meet the Team...</h1>
-</div>
-<div class="team">
-    <h1>Meet the Team...</h1>
-</div>
-<div class="team">
-    <h1>Meet the Team...</h1>
-</div>
-<div class="team">
-    <h1>Meet the Team...</h1>
-</div>
-<div class="team">
-    <h1>Meet the Team...</h1>
-</div>
+
 </body>
 </html>
