@@ -3,8 +3,6 @@ window.onload = function() {
     //get the current page path.
     var pathArray = location.pathname.split("/");
     var foldername = pathArray[pathArray.length - 1];
-    console.log(pathArray.length);
-    console.log(foldername);
 
     //make sure you execute in localhost or server for functionality
     if(foldername == "" || foldername == "index.html") {

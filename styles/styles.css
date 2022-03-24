@@ -13,6 +13,7 @@ body {
 }
 
 .bg_image {
+    z-index: -1;
     position: absolute;
     border: none;
     width: 100vw;
@@ -57,7 +58,7 @@ body {
     width: 80%;
    
     /* if not supported on browser*/
-    background: hsl(0 0% 0% /1);
+    background: rgba(97, 92, 92, 0.863);
 }
 
 @supports (backdrop-filter: blur(1rem)) {
@@ -67,6 +68,7 @@ body {
     }
 }
 .hero h1 {
+    z-index: inherit;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5em;
     color: white;
@@ -86,7 +88,7 @@ body {
 .btn {
   align-items: center;
   background-color: initial;
-  background-image: linear-gradient(rgba(235, 192, 75, 0.839), rgba(121, 98, 37, 0.84) 50%);
+  background-image: linear-gradient(rgba(235, 192, 75, 0.839), rgba(121, 98, 37, 0.84) 100%);
   border-radius: 42px;
   border-width: 0;
   box-shadow: rgba(73, 60, 22, 0.239) 0 2px 2px,rgba(235, 192, 75, 0.4) 0 8px 12px;
