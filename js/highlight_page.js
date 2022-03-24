@@ -1,8 +1,10 @@
 //wait for entire page to load
 window.onload = function() {
     //get the current page path.
-    var patharray = location.pathname.split("/");
-    var foldername = patharray[6];
+    var pathArray = location.pathname.split("/");
+    var foldername = pathArray[pathArray.length - 1];
+    console.log(pathArray.length);
+    console.log(foldername);
 
     //make sure you execute in localhost or server for functionality
     if(foldername == "" || foldername == "index.html") {
