@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>Contacts</title>
+    <script src="js/highlight_page.js" defer></script>
+    <script src="js/toggle_main_menu.js" defer></script>
 </head>
 <body>
-    <h1>Contact page</h1>
+   
+   <div class="header">
+        <div>
+            <a href="index.html">
+                <img class="logo" src="images/header/logo.svg" alt="harden logo">
+            </a>
+        </div>
+       
+        
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="nav-header"> 
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html" id="home">Home</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>

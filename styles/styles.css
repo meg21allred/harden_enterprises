@@ -7,7 +7,23 @@
 }
 
 body {
-    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(97, 96, 96);
+}
+
+.bg_image {
+    position: absolute;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.bg_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .flex {
@@ -16,85 +32,29 @@ body {
 }
 
 /* body */
-
+/* 
 .top {
-    background-image: url("../images/earth_lights.jpg");
+    height: 100vh;
+    /* background-image: url("../images/home/he_stars.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw;
-    overflow-x: hidden;
-}
+    overflow: hidden;
+    object-fit: cover; 
+} */
 
 .sr-only {
     display: none;
 }
 
-.white-logo {
-    position: absolute;
-    top: 5em;
-    right: 2em;
-    margin: auto;
-    height: 50em;
-    opacity: 0.30;
-}
-
-
-/* header */
-.logo {
-    z-index: 1;
-    margin: 2rem;
-    cursor: pointer;
-    height: 6em;
-    opacity: 75%;
-    position: fixed;
-    
-}
-
-.nav-header {
-    z-index: 1;
-    display: flex;
-    width: 100vw;
-    justify-content: flex-end;
-    position: fixed;
-}
-
-.mobile-nav-toggle {
-    display: none;
-}
-
-.primary-navigation {
-    list-style: none;
-    margin: 2em 0em 0em 2em;
-    
-    /*background if @supports not supported*/
-    background: hsl(0 0% 100% /0.6);
-}
-
-@supports (backdrop-filter: blur(1rem)) {
-    .primary-navigation {
-        /* could put back in just phone size if preferred also, 
-        make sure this is readable when */
-        background: hsl(0 0% 100% /0.1);
-        backdrop-filter: blur(1rem);
-    }
-}
-
-.primary-navigation a {
-    text-decoration: none;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.25em;
-}
-
 /* Hero Section */
 
 .hero {
-    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 15% 25% 20% 10%;
+    margin: 17% 0% 16% 20%;
     padding: 3em;
-    height: 50vh;
+    height: 50%;
+    width: 80%;
    
     /* if not supported on browser*/
     background: hsl(0 0% 0% /1);
@@ -112,161 +72,72 @@ body {
     color: white;
 }
 
+.blue_caps {
+    color: white;
+    font-size: 1.5em;
+}
+
 .hero h2 {
     color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     opacity: 0.75;
 }
 
-.cta {
-    margin: 20px 20px 20px 0px;
-    width: 10rem;
+.btn {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(rgba(235, 192, 75, 0.839), rgba(121, 98, 37, 0.84) 50%);
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(73, 60, 22, 0.239) 0 2px 2px,rgba(235, 192, 75, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-family: Quicksand,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: .04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(73, 60, 22, 0.6) 1px 1px 4px,rgba(73, 60, 22, 0.32) 4px 4px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
 }
+
+.btn:hover {
+  background-image: linear-gradient(#ebb00f, #493d17);
+}
+
+.cta {
+    width: 12em;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+
+
+/* meet the team */
 
 .team {
     height: 40em;
-}
-
-
-/* services carousel */
-
-.services_carousel {
-    position: relative;
-    height: 600px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-
-}
-
-.carousel_image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 70%;
-}
-
-.carousel_track-container {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel_track {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition: transform 250ms ease-in;
-}
-
-.carousel_slider {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-
-}
-
-.carousel_button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.carousel_button--left {
-    left: -60px;
-}
-
-.carousel_button--right {
-    right: -60px;
-}
-
-
-.carousel_button img {
-    width: 30px;
-}
-
-.carousel_nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.carousel_indicator {
-    border: o;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: white;
-    margin: 0 12px;
-    cursor: pointer;
-}
-
-.carousel_indicator.current-slide {
-    background: rgb(235, 192, 75);
-}
-
-.is-hidden {
-    display: none;
+    margin-top: 50px;
 }
 
 @media (max-width: 35em) {
-   .top {
+   /* .top {
        height: 100vh;
        background-size: 200vh;
-   }
-
-   .logo {
-       height: 4em;
-   }
-
-    .primary-navigation {
-        --gap: 2em;
-        position: fixed;
-        z-index: 1000;
-        inset: 0 0 0 25%;
-
-        flex-direction: column;
-        padding: min(30vh, 6rem) 2em;
-
-        transform: translateX(100%);
-        transition: transform 350ms ease-out;
-    
-    }
-
-    .primary-navigation[data-visible="true"] {
-        transform: translateX(0%);
-    }
-
-    .mobile-nav-toggle {
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        background-color: transparent;
-        background-image: url("../images/header/ham_icon.svg");
-        background-repeat: no-repeat;
-        width: 2rem;
-        border: 0;
-        aspect-ratio: 1;
-        top: 2rem;
-        right: 2rem;
-        position: fixed;
-    }
-
-    .mobile-nav-toggle[aria-expanded="true"] {
-        background-size: 1rem;
-        background-image: url("../images/header/close.png");
-    }
+   } */
 
     .hero {
-        margin: 40% 10% 0 10%;
-        padding: 1.5em;
+        height: 60vh;
+        margin: 45% 10% 23% 10%;
+        padding: 1em;
     }
 
     .hero h1 {
@@ -279,9 +150,5 @@ body {
 }
 
 @media (min-width: 35em) {
-    .primary-navigation {
-        --gap: clamp(1.5rem, 5vw, 3rem);
-        padding-block: 2rem;
-        padding-inline: clamp(3rem, 10vw, 10rem);
-    }
+    
 }

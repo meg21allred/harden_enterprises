@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/carousel.css">
     <title>Harden Enterprises</title>
     <script src="js/toggle_main_menu.js" defer></script>
+    <script src="js/highlight_page.js" defer></script>
     <script src="js/carousel.js" defer></script>
 </head>
 <body>
-    <div class="top">
-        <img class="white-logo" src="images/white_logo.svg" alt="white harden logo">
+
+    <div class="bg_image"> 
+        <img  src="images/home/he_stars.jpg" alt="background image of world and logo">
+       </div>
+       
+  
         <div class="header">
             <div>
-                <a href="index.html"><img class="logo" src="images/header/logo.svg" alt="harden logo"></a>
+                <a href="index.html">
+                    <img class="logo" src="images/header/logo.svg" alt="harden logo">
+                </a>
             </div>
             
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -24,6 +33,9 @@
             <nav class="nav-header"> 
                 <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                     <li class="active">
+                        <a href="index.html" id="home">Home</a>
+                    </li>
+                    <li>
                         <a href="services.html">Services</a>
                     </li>
                     <li>
@@ -40,11 +52,11 @@
         </div>
     
         <div class="hero">
-            <h1>Harden Enterprises</h1>
+            <h1><span class="blue_caps">H</span>arden <span class="blue_caps">E</span>nterprises</h1>
             <h2>Technology Consultants</h2>
             <button class="btn cta" onclick="document.location='about.html'">LEARN MORE</button>
         </div>
-    </div>
+   
    
 <div class="services_carousel">
     <button class="carousel_button carousel_button--left is-hidden">
@@ -76,6 +88,10 @@
         <button class="carousel_indicator"></button>
         <button class="carousel_indicator"></button>
     </div>
+</div>
+
+<div>
+    <h1 class="team">Meet the Team...</h1>
 </div>
 
 </body>

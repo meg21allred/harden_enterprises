@@ -1,0 +1,87 @@
+/* services carousel */
+
+.services_carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+
+}
+
+.carousel_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+}
+
+.carousel_track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel_slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button--left {
+    left: -60px;
+}
+
+.carousel_button--right {
+    right: -60px;
+}
+
+
+.carousel_button img {
+    width: 30px;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator {
+    border: o;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: white;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel_indicator.current-slide {
+    background: rgb(235, 192, 75);
+}
+
+.is-hidden {
+    display: none;
+}
