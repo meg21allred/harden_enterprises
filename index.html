@@ -5,93 +5,296 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home/home.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/home/carousel.css">
+    <link rel="stylesheet" href="styles/home/team.css">
     <title>Harden Enterprises</title>
     <script src="js/toggle_main_menu.js" defer></script>
     <script src="js/highlight_page.js" defer></script>
     <script src="js/carousel.js" defer></script>
 </head>
 <body>
-
+    
     <div class="bg_image"> 
         <img  src="images/home/he_stars.jpg" alt="background image of world and logo">
-       </div>
-       
+    </div>
   
-        <div class="header">
-            <div>
-                <a href="index.html">
-                    <img class="logo" src="images/header/logo.svg" alt="harden logo">
-                </a>
-            </div>
-            
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                <span class="sr-only">Menu</span>
-            </button>
-    
-            <nav class="nav-header"> 
-                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                    <li class="active">
-                        <a href="index.html" id="home">Home</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+    <div class="header">
+        <div>
+            <a href="index.html">
+                <img class="logo" src="images/header/logo.svg" alt="harden logo">
+            </a>
         </div>
-    
-        <div class="hero">
-            <h1><span class="blue_caps">H</span>arden <span class="blue_caps">E</span>nterprises</h1>
-            <h2>Technology Consultants</h2>
-            <button class="btn cta" onclick="document.location='about.html'">LEARN MORE</button>
-        </div>
-   
-   
-<div class="services_carousel">
-    <button class="carousel_button carousel_button--left is-hidden">
-        <img src="images/carousel/left_arrow.svg" alt="left arrow">
-    </button>
-    <div class="carousel_track-container">
-        <ul class="carousel_track">
-            <li class="carousel_slider current-slide">
-                <img class="carousel_image" src="images/carousel/gray_board-min.jpg" alt="gray board">
-            </li>
-            <li class="carousel_slider">
-                <img class="carousel_image" src="images/carousel/rainbow_chip-min.jpg" alt="rainbow chip">
-            </li>
-            <li class="carousel_slider">
-                <img class="carousel_image" src="images/carousel/servers-min.jpg" alt="servers">
-            </li>
-            <li class="carousel_slider">
-                <img class="carousel_image" src="images/carousel/wires-min.jpg" alt="wires">
-            </li>
-        </ul>
-    </div>
-    <button class="carousel_button carousel_button--right">
-        <img src="images/carousel/right_arrow.svg" alt="right arrow">
-    </button>
+        
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
 
-    <div class="carousel_nav">
-        <button class="carousel_indicator current-slide"></button>
-        <button class="carousel_indicator"></button>
-        <button class="carousel_indicator"></button>
-        <button class="carousel_indicator"></button>
+        <nav class="nav-header"> 
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html" id="home">Home</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
+
+    <div class="hero">
+        <h1><span class="blue_caps">H</span>arden <span class="blue_caps">E</span>nterprises</h1>
+        <h2>Technology Consultants</h2>
+        <button class="btn cta" onclick="document.location='about.html'">LEARN MORE</button>
+    </div>
+
+    <div class="headline">
+        <h1>Services</h1>
+    </div>
+   
+    <div class="services_carousel">
+        <button class="carousel_button carousel_button--left is-hidden">
+            <img src="images/carousel/left_arrow.svg" alt="left arrow">
+        </button>
+        <div class="carousel_track-container">
+            <ul class="carousel_track">
+                <li class="carousel_slider current-slide">
+                    <img class="carousel_image" src="images/carousel/gray_board-min.jpg" alt="gray board">
+                    <div class="service">
+                        <h1>Technology Consulting</h1>
+                        <p>here is were you will summarize what this service means and what you can do for 
+                            the customer that sets you apart from your competition.
+                        </p>
+                        <button class="btn carousel_btn">More Info</button>
+                    </div>
+                </li>
+                <li class="carousel_slider">
+                    <img class="carousel_image" src="images/carousel/rainbow_chip-min.jpg" alt="rainbow chip">
+                    <div class="service">
+                        <h1>Software Architecture</h1>
+                        <p>here is were you will summarize what this service means and what you can do for 
+                            the customer that sets you apart from your competition.
+                        </p>
+                        <button class="btn carousel_btn">More Info</button>
+                    </div>
+                </li>
+                <li class="carousel_slider">
+                    <img class="carousel_image" src="images/carousel/servers-min.jpg" alt="servers">
+                    <div class="service">
+                        <h1>Data Center</h1>
+                        <p>here is were you will summarize what this service means and what you can do for 
+                            the customer that sets you apart from your competition.
+                        </p>
+                        <button class="btn carousel_btn">More Info</button>
+                    </div>
+                </li>
+                <li class="carousel_slider">
+                    <img class="carousel_image" src="images/carousel/wires-min.jpg" alt="wires">
+                    <div class="service">
+                        <h1>Service Provider</h1>
+                        <p>here is were you will summarize what this service means and what you can do for 
+                            the customer that sets you apart from your competition.
+                        </p>
+                        <button class="btn carousel_btn">More Info</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="carousel_button carousel_button--right">
+            <img src="images/carousel/right_arrow.svg" alt="right arrow">
+        </button>
+
+        <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
+    </div>
+
+    <div class="headline">
+        <h1>Meet the Team</h1>
+    </div>
+
+    <div class="team">
+
+    <!-- card one -->
+    <div class="card">
+        <div class="front">
+            <img src="images/user_7.jpg" alt="">
+            <h3 class="team_name">Richard Harden</h3>
+            <div class="stats">
+                <p class="title">Head Consulant</p>
+            </div>
+        </div>
+        <div class="back_bg">
+            <div class="back">
+                <div>
+                    <p class="about_p">This is a bit about Richard. He does a lot of 
+                        consulting and finds it very rewarding to do projects that...</p>
+                </div>
+                
+                <div>
+                    <button class="btn about_btn">More</button>
+                </div>
+                 
+            </div>
+        
+            <div class="about_bg"></div>
+        </div>
+        
+    </div>
+
+    <!-- card two -->
+    <div class="card">
+        <div class="front">
+            <img src="images/user_1.jpg" alt="">
+            <h3 class="team_name">Adam Harden</h3>
+            <div class="stats">
+                <p class="title">Software Architect</p>
+            </div>
+        </div>
+        <div class="back_bg">
+            <div class="back">
+                <div>
+                    <p class="about_p">This is a bit about Adam. He does a lot of 
+                        consulting and finds it very rewarding to do projects that...</p>
+                </div>
+                
+                <div>
+                    <button class="btn about_btn">More</button>
+                </div>
+                 
+            </div>
+        
+            <div class="about_bg"></div>
+        </div>
+        
+    </div>
+
+    <!-- card three -->
+    <div class="card">
+        <div class="front">
+            <img src="images/user_3.jpg" alt="">
+            <h3 class="team_name">John Harden</h3>
+            <div class="stats">
+                <p class="title">Engineer</p>
+            </div>
+        </div>
+        <div class="back_bg">
+            <div class="back">
+                <div>
+                    <p class="about_p">This is a little bit about John. He does a lot of 
+                        consulting and finds it very rewarding to do projects that...</p>
+                </div>
+                
+                <div>
+                    <button class="btn about_btn">More</button>
+                </div>
+                 
+            </div>
+        
+            <div class="about_bg"></div>
+        </div>
+        
+    </div>
+
+    <!-- card four -->
+    <div class="card">
+        <div class="front">
+            <img src="images/user_2.jpg" alt="">
+            <h3 class="team_name">Benjamin Harden</h3>
+            <div class="stats">
+                <p class="title">Consulant</p>
+            </div>
+        </div>
+        <div class="back_bg">
+            <div class="back">
+                <div>
+                    <p class="about_p">This is a bit about Ben. He does a lot of 
+                        consulting and finds it very rewarding to do projects that...</p>
+                </div>
+                
+                <div>
+                    <button class="btn about_btn">More</button>
+                </div>
+                 
+            </div>
+        
+            <div class="about_bg"></div>
+        </div>
+        
+    </div>
+
+    <!-- card five -->
+    <div class="card">
+        <div class="front">
+            <img src="images/user_6.jpg" alt="">
+            <h3 class="team_name">Audrey Billingsley</h3>
+            <div class="stats">
+                <p class="title">Project Manager</p>
+            </div>
+        </div>
+        <div class="back_bg">
+            <div class="back">
+                <div>
+                    <p class="about_p">This is a bit about Audrey. He does a lot of 
+                        consulting and finds it very rewarding to do projects that...</p>
+                </div>
+                
+                <div>
+                    <button class="btn about_btn">More</button>
+                </div>
+                 
+            </div>
+        
+            <div class="about_bg"></div>
+        </div>
+        
+    </div>
+
+    <!-- card three -->
+    <div class="card">
+        <div class="front">
+            <img src="images/user_5.jpg" alt="">
+            <h3 class="team_name">Roy Harden</h3>
+            <div class="stats">
+                <p class="title">Consulant</p>
+            </div>
+        </div>
+        <div class="back_bg">
+            <div class="back">
+                <div>
+                    <p class="about_p">This is a little bit about Roy. He does a lot of 
+                        consulting and finds it very rewarding to do projects that...</p>
+                </div>
+                
+                <div>
+                    <button class="btn about_btn">More</button>
+                </div>
+                 
+            </div>
+        
+            <div class="about_bg"></div>
+        </div>
+        
+    </div>
+
+    
+   
 </div>
 
-<div>
-    <h1 class="team">Meet the Team...</h1>
+<div class="headline">
 </div>
 
 </body>

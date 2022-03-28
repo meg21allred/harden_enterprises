@@ -5,10 +5,11 @@
     height: 6em;
     opacity: 75%;
     position: fixed;
+    z-index: 10;
 }
 
 .nav-header {
-    z-index: 2;
+    z-index: 9999;
     display: flex;
     width: 70vw;
     justify-content: flex-end;
@@ -25,14 +26,14 @@
     margin: 2em 0em 0em 2em;
     
     /*background if @supports not supported*/
-    background: rgba(97, 92, 92, 0.863);
+    background: var(--clr-bg-div-gray);
 }
 
 @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
         /* could put back in just phone size if preferred also, 
         make sure this is readable when */
-        background: hsl(0 0% 100% /0.1);
+        background: var(--clr-bg-div-blur);
         backdrop-filter: blur(1rem);
     }
 }
@@ -46,11 +47,11 @@
 
 .primary-navigation a.current-page{
     font-weight: 900;
-    color: rgb(230, 194, 98)
+    color: var(--clr-bright-yellow);
 }
 
 .primary-navigation a:hover {
-    color: rgb(235, 216, 165);
+    color: var(--clr-light-yellow);
 }
 
 

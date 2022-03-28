@@ -6,15 +6,45 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
-
 }
 
 .carousel_image {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 70%;
+    z-index: -1;
+}
+
+.service {
+    position: absolute;
+    width: 80%;
+    height: 500px;
+    padding: 5em;
+    top: 7.5%;
+    left: 10%;
+    color: white;
+    background-color: var(--clr-bg-div-gray);
+    z-index: 10;
+}
+
+.service p {
+    margin: 2em;
+    font-size: 1.5em;
+}
+
+.service .btn {
+    margin-top: 5em;
+    margin-inline: auto;
+    width: 20%;
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .service {
+        background: var(--clr-bg-div-blur);
+        backdrop-filter: blur(1rem);
+    }
 }
 
 .carousel_track-container {
@@ -79,7 +109,7 @@
 }
 
 .carousel_indicator.current-slide {
-    background: rgb(235, 192, 75);
+    background: var(--clr-main-yellow);
 }
 
 .is-hidden {

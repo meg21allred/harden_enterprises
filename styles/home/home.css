@@ -1,0 +1,75 @@
+/* back ground image */
+.bg_image {
+    z-index: -1;
+    position: absolute;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.bg_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 17% 0% 11% 20%;
+    padding: 3em;
+    height: 50%;
+    width: 80%;
+   
+    /* if not supported on browser*/
+    background: var(--clr-bg-div-gray);
+}
+
+.cta {
+    width: 12em;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+
+
+@supports (backdrop-filter: blur(1rem)) {
+    .hero {
+        background-color: var(--clr-bg-div-blur);
+        backdrop-filter: blur(1rem);
+    }
+}
+.hero h1 {
+    z-index: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    color: white;
+}
+
+.blue_caps {
+    color: white;
+    font-size: 1.5em;
+}
+
+.hero h2 {
+    color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.75;
+}
+
+@media (max-width: 35em) {
+ 
+     .hero {
+         height: 60vh;
+         margin: 45% 10% 23% 10%;
+         padding: 1em;
+     }
+ 
+     .hero h1 {
+         font-size: 4em;
+     }
+ }
