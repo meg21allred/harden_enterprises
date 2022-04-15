@@ -5,7 +5,7 @@
     height: 6em;
     opacity: 75%;
     position: fixed;
-    z-index: 10;
+    z-index: 11;
 }
 
 .nav-header {
@@ -23,26 +23,26 @@
 
 .primary-navigation {
     list-style: none;
-    margin: 2em 0em 0em 2em;
+    margin: 0em 0em 0em 2em;
     
     /*background if @supports not supported*/
     background: var(--clr-bg-div-gray);
 }
 
-@supports (backdrop-filter: blur(1rem)) {
+/* @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
         /* could put back in just phone size if preferred also, 
-        make sure this is readable when */
+        make sure this is readable when 
         background: var(--clr-bg-div-blur);
         backdrop-filter: blur(1rem);
     }
-}
+} */
 
 .primary-navigation a {
     text-decoration: none;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.25em;
+    font-size: 2.25vh;
 }
 
 .primary-navigation a.current-page{
@@ -64,7 +64,7 @@
      .primary-navigation {
          --gap: 2em;
          position: fixed;
-         z-index: 1000;
+         z-index: 3;
          inset: 0 0 0 25%;
  
          flex-direction: column;
@@ -82,7 +82,7 @@
      .mobile-nav-toggle {
          display: block;
          position: absolute;
-         z-index: 9999;
+         z-index: 9998;
          background-color: transparent;
          background-image: url("../images/header/ham_icon.svg");
          background-repeat: no-repeat;
@@ -97,6 +97,7 @@
      .mobile-nav-toggle[aria-expanded="true"] {
          background-size: 1rem;
          background-image: url("../images/header/close.png");
+         z-index: 10000;
      }
  
  }

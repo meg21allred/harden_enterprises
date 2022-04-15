@@ -14,6 +14,7 @@
     padding: 2em 0;
     z-index: 0;
     border-radius: 1em;
+    margin-bottom: 20%;
 
 }
 
@@ -26,12 +27,12 @@
     border-radius: 1em;
 }
 
-@supports (backdrop-filter: blur(1rem)) {
+/* @supports (backdrop-filter: blur(1rem)) {
     .card {
         background-color: var(--clr-bg-div-blur);
         backdrop-filter: blur(1rem);
     }
-}
+} */
 
 .front {
     transition: 250ms;
@@ -68,6 +69,10 @@
 .about_btn {
     margin-inline: auto;
     z-index: 999;
+}
+
+.back a {
+    text-decoration: none;
 }
 
 .back_bg {

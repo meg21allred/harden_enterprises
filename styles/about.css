@@ -1,0 +1,365 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10% 10% 10%;
+}
+
+.content h1 {
+    font-size: 6vh;
+    text-align: center;
+    color: navy;
+}
+
+/*  mission statement  */
+
+.mission h1 {
+    text-align: center;
+}
+
+.mission p{
+    display: flex;
+    padding: 2em;
+
+}
+
+section {
+    padding: 3em;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.mission_quote {
+    font-size: 3.5vh;
+    width: 30%;
+    margin-top: 17%;
+    margin-left: 9%;
+    position: absolute;
+    opacity: 0;
+}
+
+.mission_statement h1 {
+
+}
+
+.mission_p {
+    display: flex;
+    font-size: 3vh;
+    padding: 2em;
+    text-align: justify;
+}
+
+.mission_p span {
+    display: block;
+    height: 100%;
+    width: 5px;
+    background: navy;
+}
+
+.sticky span {
+    width: 100%;
+    background: navy;
+    display: block;
+    height: 5px;
+    margin-top: 20px;
+}
+
+.sticky img {
+    position: absolute;
+}
+
+.sticky img:nth-of-type(1) {
+    width: 40%;
+    /* right: 9%; */
+    right: -100%;
+    top: 20%;
+    overflow: hidden;
+    animation: slide-right 2s forwards;
+}
+
+.fivers {
+    width: 25%;
+    right: 51%;
+    bottom: 25%;
+    margin-top: 15%;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+@keyframes slide-left {
+    0% {
+        left: -100%
+    }
+    25% {
+        left: -100%;
+    }
+    75% {
+        left: 23%
+    }
+    100% {
+        left: 23%
+    }
+}
+
+@keyframes slide-right{
+    0% {
+        right: -100%;
+    }
+    25% {
+        right: -100%;
+    }
+    75% {
+        right: 9%;
+    }
+    100% {
+        right: 9%;
+    }
+}
+
+/* Company Values */
+
+.values h1 {
+    margin: 10%;
+}
+.value_icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.value_icons img {
+    height: 10em;
+    float: right;
+}
+
+.values_1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+.values_1 blockquote {
+    width: 30%;
+    padding: 1em;
+    font-size: 2.5vh;
+}
+
+.values_1 span {
+    font-size: 3vh;
+    font-weight: bold;
+    color: navy;
+}
+
+/* founders story */
+
+.founders_h1 {
+    margin: 8% 5% 5% 5%;
+}
+
+.founders {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(97, 92, 92, 0.863);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.founders img {
+    width: 30%;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story p {
+    width: 80%;
+    color: white;
+    font-size: 2.5vh;
+    padding: 1em;
+}
+
+.story span {
+    font-weight: bold;
+    color: var(--clr-main-yellow);
+}
+
+/* authority  */
+
+.authority_h1 {
+    margin: 15% 5% 5% 5%;
+}
+
+.authority {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.authority img {
+    width: 10%;
+    margin: 2%;
+}
+
+/* Team Bios */
+
+.bios_h1 {
+    margin: 8% 5% 0% 5%;
+}
+
+.bios {
+    margin: 5em;
+    padding: 2em;
+    border-radius: 1em;
+    background-image: linear-gradient(to right, var(--clr-main-yellow), var(--clr-light-yellow));
+}
+
+.bios div {
+    display: flex;
+    margin: 3em;
+    background: var(--clr-bg-div-gray);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.bios p {
+    padding: 1em;
+    font-size: 1.75vh;
+    color: white;
+    border-radius: 1em;
+}
+
+.bio div {
+    background: none;
+    margin: 0;
+}
+
+.conclusion_h1 {
+    margin: 8% 5% 0% 5%;
+}
+
+@media (max-width: 35em) {
+
+    .content {
+        margin-top: 20%;
+    }
+
+    .content h1 {
+        font-size: 8vw;
+    }
+ 
+    /*  mission statement  */
+
+
+
+    .mission p{
+        display: flex;
+        padding: 0;
+
+    }
+
+    section {
+        padding: 0;
+        height: 83vh;
+        margin: 0;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .mission_quote {
+        font-size: 5vw;
+        margin-left: 0;
+        width: 100%;
+        padding: 10%;
+        position: relative;
+    }
+
+
+    .mission_p {
+        flex-direction: column;
+        font-size: 4vw;
+        padding: 2em;
+        text-align: justify;
+    }
+
+    .mission_p p {
+        margin: 5% 0 5% 0;
+    }
+
+    .mission_p span {
+        height: 5px;
+        width: 100%;
+    }
+
+
+
+    .sticky img:nth-of-type(1) {
+        width: 90%;
+        right: -150%;
+        top: 23%;
+    }
+
+    .fivers {
+        width: 80%;
+        right: 24%;
+        bottom: 15%;
+    }
+
+
+    @keyframes slide-right{
+        0% {
+            right: -150%;
+        }
+        25% {
+            right: -150%;
+        }
+        75% {
+            right: -4%;
+        }
+        100% {
+            right: -4%;
+        }
+    }
+
+
+    /* values */
+
+    .value_icons {
+        padding: 0;
+    }
+
+    .value_icons img {
+        height: 20vw;
+    }
+
+    .values_1 {
+        flex-wrap: wrap;
+    }
+
+    .values_1 blockquote {
+        width: 65%;
+        font-size: 3.5vw;
+        padding-bottom: 2em;
+    }
+
+    .values_1 span {
+        font-size: 4vw;
+    }
+
+    
+
+}
