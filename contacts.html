@@ -10,8 +10,6 @@
     <title>Contacts</title>
     <script src="js/highlight_page.js" defer></script>
     <script src="js/toggle_main_menu.js" defer></script>
-    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
-    <script src="js/contact.js" defer ></script>
 </head>
 <body>
    
@@ -52,25 +50,40 @@
 
 
     <!-- contact form  -->
+    
+       
+        
+    <div class="contact">
 
-    <!-- <div class="contact">
-        <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <h3>GET IN TOUCH</h3>
-                <Input type="text" id="name" placeholder="Your Name" required></Input>
-                <Input type="email" id="email" placeholder="Email address" required></Input>
-                <Input type="text" id="phone" placeholder="Phone number" required></Input>
-                <textarea id="message" rows="10"placeholder="how can we help you?"></textarea>
-                <button class="btn" type="submit">SEND</button>
-            </form>
+        <div class="footer contact_details">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <br><br>
+                <ul>
+                    <li><img src="images/location.png" alt="location"><p>2345 Main Street, Frisco, Texas 75032</p></li>
+                    <li><img src="images/phone-call.png" alt="phone"><p>(469) 555 - 5555</p></li>
+                    <li><img src="images/mail.png" alt="email"><p>abharden@hardenenterprises.com</p></li>
+                </ul>
+            </div>
         </div>
-    </div> -->
+     
+        <div class="container">
+          
+            <form action="https://formsubmit.co/meg21allred@gmail.com" method="POST">
+                <h3>Contact us with your questions!</h3>
+                <input type="text" name="name" placeholder="Your Name..." required>
+                <input type="email" name="email" placeholder="Your Email..." required>
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                <input type="hidden" name="_autoresponse" value="your custom message">
+                <input type="hidden" name="_next" value="https://meg21allred.github.io/harden_enterprises/contacts.html">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_template" value="basic">
+                <button class="form_btn btn" type="submit">Send</button>
+           </form>
+        </div> 
+    </div>
 
-    <form action="https://formsubmit.co/meg21allred@gmail.com" method="POST">
-        <input type="text" name="name" required>
-        <input type="email" name="email" required>
-        <button type="submit">Send</button>
-   </form>
+ 
 
     <!-- footer -->
 

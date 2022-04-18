@@ -1,5 +1,5 @@
 .contact {
-    margin: 20%;
+    margin: 40% 20% 10% 20%;
     padding: 0;
     box-sizing: border-box;
     
@@ -14,19 +14,21 @@
 }
 
 form {
-    background-color: navy;
+    background-color: var(--clr-bg-div-gray);
     display: flex;
     flex-direction: column;
     padding: 2vh 4vw;
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     border-radius: 1em;
 }
 
 form h3 {
-    color: gray;
+    color: white;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
+    font-size: 3vh;
+    text-align: center;
 }
 
 form input, form textarea {
@@ -38,4 +40,27 @@ form input, form textarea {
     font-size: 16px;
 }
 
+.form_btn {
+    margin: 5%;
+    max-width: fit-content;
+    align-self: center;
+}
 
+.contact_details {
+    background: white;
+    padding: 0;
+    margin-bottom: 10%;
+    color: var(--clr-bg-div-gray);
+    
+}
+
+@media (max-width: 35em) {
+
+    .contact {
+        margin: 30% 10% 10% 10%;
+    }
+    .footer p {
+        font-size: 3vw;
+        
+    } 
+}
