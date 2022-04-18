@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <title>Contacts</title>
     <script src="js/highlight_page.js" defer></script>
     <script src="js/toggle_main_menu.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="js/contact.js" defer ></script>
 </head>
 <body>
    
@@ -47,6 +50,21 @@
         </nav>
     </div>
 
+
+    <!-- contact form  -->
+
+    <div class="contact">
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>GET IN TOUCH</h3>
+                <Input type="text" id="name" placeholder="Your Name" required></Input>
+                <Input type="email" id="email" placeholder="Email address" required></Input>
+                <Input type="text" id="phone" placeholder="Phone number" required></Input>
+                <textarea id="message" rows="10"placeholder="how can we help you?"></textarea>
+                <button class="btn" type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
 
     <!-- footer -->
 
