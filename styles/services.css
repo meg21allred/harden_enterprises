@@ -1,0 +1,52 @@
+.services {
+    margin: 10% 3% 0% 3%;
+}
+
+.service_block {
+    border-radius: 1em;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.service_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-image: linear-gradient(to right, var(--clr-main-yellow), var(--clr-light-yellow));
+}
+
+.service_title_2 {
+    background-image: linear-gradient(to right, rgba(97, 92, 92, 0.863), rgb(163, 160, 160));
+}
+
+.service_title button {
+    margin-top: 5%;
+}
+
+.service_title h1 {
+    font-size: 7.5vh;
+    color: white;
+}
+
+.service_list {
+    width: 50%;
+    background-color: rgba(97, 92, 92, 0.863);
+    padding: 3vh 3vh 4vh 7vh;
+    font-size: 2vh;
+    list-style: georgian outside url(../images/services/microBullet.svg);
+    color: rgb(207, 205, 205);
+}
+
+.service_list_2 {
+    background-color: rgb(21, 21, 44);
+}
+li::marker {
+    font-size: 7vh;
+}
