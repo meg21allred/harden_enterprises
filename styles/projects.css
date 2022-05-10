@@ -1,0 +1,71 @@
+.projects {
+    margin: 12% 5% 0 5%;
+}
+
+.projects h1 {
+    color: navy;
+    text-align: center;
+    font-size: 6vh;
+}
+.main_splash {
+    margin-bottom: 9%;
+}
+
+.dividing_line {
+    height: 2vh;
+    background-color: navy;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.heading_images {
+    display: flex;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+.heading_images img {
+    width: 25%;
+}
+
+.project {
+    display: flex;
+    color: #5e5d5de1;
+    margin-bottom: 3%;
+}
+
+.project_image img{
+    height: 80vh;
+}
+.project_description {
+    padding: 2em;
+}
+
+.project_description h1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.project_description img {
+    height: 6vh;
+}
+
+.project_description p {
+    font-size: 3vh;
+    text-align: justify;
+    
+}
+
+.project_list {
+    padding: 3vh;
+}
+
+.project_list ul {
+    line-height: 6vh;
+}
+
+.project_list li {
+    list-style: georgian outside url(../images/projects/microBullet_gray.svg);
+    font-size: 4vh;
+    text-indent: 2vh;
+}

@@ -1,5 +1,15 @@
 .services {
-    margin: 10% 3% 0% 3%;
+    margin: 13% 3% 0% 3%;
+}
+
+.services span {
+    color: navy;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.main_splash {
+    margin-bottom: 5%;
 }
 
 .service_block {
