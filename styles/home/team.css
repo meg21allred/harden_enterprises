@@ -118,3 +118,11 @@
 .card:hover .about_btn {
     transform: scale(.75);
 }
+
+@media (max-width: 35em) {
+    .back_bg {
+        width: 45vw;
+        
+    
+    }
+}
