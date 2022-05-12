@@ -360,11 +360,6 @@ section {
         font-size: 4vw;
     }
 
-    
-
-}
-
-@media (max-width: 35em) {
     .founders {
         flex-direction: column;
     }
@@ -386,5 +381,5 @@ section {
         flex-direction: column;
     }
     
-    
+
 }
