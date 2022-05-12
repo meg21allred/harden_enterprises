@@ -72,7 +72,7 @@
 
 @media (max-width: 35em) {
     .projects {
-        margin: 25% 7% 0 7%;
+        margin: 30% 7% 0 7%;
     }
 
     .projects h1 {
@@ -88,7 +88,7 @@
         height: 96vw;
         margin-bottom: 3vw;
     }
-    
+
     .project_description {
         padding: 1em;
     }
