@@ -363,3 +363,28 @@ section {
     
 
 }
+
+@media (max-width: 35em) {
+    .founders {
+        flex-direction: column;
+    }
+
+    .founders img {
+        display: none;
+    }
+
+    .bios_h1 {
+        margin: 8% 5% 0% 5%;
+    }
+    
+    .bios {
+        margin: 0vw;
+        padding: 0;
+    }
+    
+    .bios div {
+        flex-direction: column;
+    }
+    
+    
+}
