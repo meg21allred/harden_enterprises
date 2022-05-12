@@ -121,8 +121,10 @@
 
 @media (max-width: 35em) {
     .back_bg {
-        width: 45vw;
-        
-    
+        width: 50vw;
+    }
+
+    .back {
+        font-size: 3vw;
     }
 }
