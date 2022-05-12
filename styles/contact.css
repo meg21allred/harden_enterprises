@@ -8,7 +8,6 @@
 .contact_section {
     display: flex;
     margin-bottom: 5%;
-    /* background-color: rgb(21, 21, 44); */
     background-color: rgb(150, 148, 148);
 }
 
@@ -71,8 +70,13 @@ form input, form textarea {
     .contact {
         margin: 30% 10% 10% 10%;
     }
-    .footer p {
-        font-size: 3vw;
-        
-    } 
+  
+    .contact_section {
+        flex-direction: column;
+    }
+
+    .letters {
+        width: 100%;
+        margin-bottom: 10%;
+    }
 }
