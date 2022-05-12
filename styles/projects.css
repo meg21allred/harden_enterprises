@@ -69,3 +69,50 @@
     font-size: 4vh;
     text-indent: 2vh;
 }
+
+@media (max-width: 35em) {
+    .projects {
+        margin: 25% 7% 0 7%;
+    }
+
+    .projects h1 {
+        font-size: 7vw;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project_image img{
+        height: 96vw;
+        margin-bottom: 3vw;
+    }
+    
+    .project_description {
+        padding: 1em;
+    }
+    
+    .project_description img {
+        height: 6vh;
+    }
+    
+    .project_description p {
+        font-size: 5vw;
+    }
+    
+    .project_list {
+        padding: 3vh;
+    }
+    
+    .project_list ul {
+        line-height: 9vw;
+    }
+    
+    .project_list li {
+        font-size: 5.5vw;
+        text-indent: 2vh;
+    }
+    
+
+}
