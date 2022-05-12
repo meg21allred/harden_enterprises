@@ -73,6 +73,8 @@ form input, form textarea {
   
     .contact_section {
         flex-direction: column;
+        border-radius: 1em;
+        overflow: hidden;
     }
 
     .letters {
