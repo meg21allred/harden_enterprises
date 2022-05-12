@@ -47,12 +47,9 @@
     width: fit-content;
 }
 
-/* @supports (backdrop-filter: blur(1rem)) {
-    .service {
-        background: var(--clr-bg-div-blur);
-        backdrop-filter: blur(1rem);
-    }
-} */
+.service a {
+    text-decoration: none;
+}
 
 .spacer {
     aspect-ratio: 960/100;
