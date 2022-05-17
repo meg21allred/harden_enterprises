@@ -5,7 +5,7 @@
 .projects h1 {
     color: navy;
     text-align: center;
-    font-size: 6vh;
+    font-size: 4vw;
 }
 .main_splash {
     margin-bottom: 9%;
@@ -35,7 +35,7 @@
 }
 
 .project_image img{
-    height: 80vh;
+    width: 40vw;
 }
 .project_description {
     padding: 2em;
@@ -47,11 +47,11 @@
 }
 
 .project_description img {
-    height: 6vh;
+    height: 5vw;
 }
 
 .project_description p {
-    font-size: 3vh;
+    font-size: 1.75vw;
     text-align: justify;
     
 }
@@ -61,13 +61,17 @@
 }
 
 .project_list ul {
-    line-height: 6vh;
+    line-height: 3vw;
 }
 
 .project_list li {
     list-style: georgian outside url(../images/projects/microBullet_gray.svg);
-    font-size: 4vh;
+    font-size: 2vw;
     text-indent: 2vh;
+}
+
+@media (max-width: 1366px) {
+    
 }
 
 @media (max-width: 35em) {
@@ -77,6 +81,10 @@
 
     .projects h1 {
         font-size: 7vw;
+    }
+
+    .project_image img{
+        width: 100%;
     }
 
     .project {

@@ -148,9 +148,11 @@ body {
 .copyright p {
     display: inline-block;
 }
+@media (max-width: 1366px) {
+    
+}
 
-
-@media (max-width: 55em) {
+@media (max-width: 35em) {
 
     .headline {
         margin-top: 20%;

@@ -252,6 +252,10 @@ section {
     margin: 8% 5% 0% 5%;
 }
 
+@media (max-width: 1366px) {
+    
+}
+
 @media (max-width: 35em) {
 
     .content {

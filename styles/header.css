@@ -24,19 +24,9 @@
 .primary-navigation {
     list-style: none;
     margin: 0em 0em 0em 2em;
-    
-    /*background if @supports not supported*/
     background: var(--clr-bg-div-gray);
 }
 
-/* @supports (backdrop-filter: blur(1rem)) {
-    .primary-navigation {
-        /* could put back in just phone size if preferred also, 
-        make sure this is readable when 
-        background: var(--clr-bg-div-blur);
-        backdrop-filter: blur(1rem);
-    }
-} */
 
 .primary-navigation a {
     text-decoration: none;
@@ -54,52 +44,65 @@
     color: var(--clr-light-yellow);
 }
 
-
-
 @media (max-width: 1366px) {
+
+
+    .primary-navigation {
+        --gap: 2em;
+        position: fixed;
+        width: 60vw;
+        z-index: 3;
+        inset: 0 0 0 25%;
+
+        flex-direction: column;
+        padding: min(30vh, 6rem) 2em;
+
+        transform: translateX(250%);
+        transition: transform 350ms ease-out;
+    
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(50%);
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9998;
+        background-color: transparent;
+        background-image: url("../images/header/ham_icon.svg");
+        background-repeat: no-repeat;
+        width: 2rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        position: fixed;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-size: 1rem;
+        background-image: url("../images/header/close.png");
+        z-index: 10000;
+    }
+}
+
+
+@media (max-width: 35em) {
     .logo {
         height: 4em;
     }
- 
-     .primary-navigation {
-         --gap: 2em;
-         position: fixed;
-         z-index: 3;
-         inset: 0 0 0 25%;
- 
-         flex-direction: column;
-         padding: min(30vh, 6rem) 2em;
- 
-         transform: translateX(100%);
-         transition: transform 350ms ease-out;
-     
-     }
- 
-     .primary-navigation[data-visible="true"] {
-         transform: translateX(0%);
-     }
- 
-     .mobile-nav-toggle {
-         display: block;
-         position: absolute;
-         z-index: 9998;
-         background-color: transparent;
-         background-image: url("../images/header/ham_icon.svg");
-         background-repeat: no-repeat;
-         width: 2rem;
-         border: 0;
-         aspect-ratio: 1;
-         top: 2rem;
-         right: 2rem;
-         position: fixed;
-     }
- 
-     .mobile-nav-toggle[aria-expanded="true"] {
-         background-size: 1rem;
-         background-image: url("../images/header/close.png");
-         z-index: 10000;
-     }
- 
+
+    .primary-navigation {
+        width: 70vw;
+        transform: translateX(100%);
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0);
+    }
+
  }
  
  @media (min-width: 35em) and (max-width: 55em) {

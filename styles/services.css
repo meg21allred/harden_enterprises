@@ -41,7 +41,7 @@
 }
 
 .service_title h1 {
-    font-size: 7.5vh;
+    font-size: 4vw;
     color: white;
 }
 
@@ -60,6 +60,30 @@
 li::marker {
     font-size: 7vh;
 }
+@media (max-width: 1366px) {
+
+    .services {
+        margin-top: 20%;
+    }
+    .service_title h1 {
+        font-size: 5vw;
+    }
+
+    .service_item {
+        flex-direction: column;
+       
+    }
+
+    .service_title {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        width: 100%;
+    }
+
+    .service_list {
+        width: 100%;
+    }
+}
 
 @media (max-width: 35em) {
 
@@ -71,17 +95,6 @@ li::marker {
         font-size: 4vw;
     }
     
-    .service_item {
-        flex-direction: column;
-       
-    }
-    
-    .service_title {
-        padding-top: 5vw;
-        padding-bottom: 5vw;
-        width: 100%;
-    }
-    
     .service_title button {
         margin-top: 5%;
     }
@@ -90,8 +103,6 @@ li::marker {
         font-size: 7.5vw;
     }
     
-    .service_list {
-        width: 100%;
-    }
+    
     
 }
