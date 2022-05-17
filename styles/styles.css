@@ -39,7 +39,7 @@ body {
     display: flex;
     height: 15vh;
     text-align: center;
-    font-size: 5vh;
+    font-size: 3vw;
     margin-top: 15%;
     margin-bottom: 5%;
     overflow: hidden;
@@ -149,7 +149,14 @@ body {
     display: inline-block;
 }
 @media (max-width: 1366px) {
-    
+
+    .headline { 
+        font-size: 4vw;
+    }
+
+    .service_headline {
+        margin-top: 15vw;
+    }
 }
 
 @media (max-width: 35em) {
